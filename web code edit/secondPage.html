@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+    <link rel="stylesheet" href="secondPage.css">
+</head>
+<body>
+    <section class="section">
+        <div class="flex">
+            <div class="logo">
+                <img src="icon/logo2.jpg" alt="">
+            </div>
+            <div class="search_circle">
+                 <button class="opening"><img class="serach_open" src="icon/srch.png" alt=""></button>
+                 <div class="after_click">
+                    <input class="search_text text_appear" type="text" placeholder="">
+                 </div>
+                 <div class="close">
+                    <button class="closing"><img src="icon/close.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <hr id="hr">
+        <section class="box">
+            <div class="polygon">
+                <p>hello</p>
+            </div>
+        </section>
+    </section>
+    <script>
+        let open = document.querySelector('.opening');
+        let close = document.querySelector('.closing')
+        let search_circle = document.querySelector('.search_circle')
+        let close_icon = document.querySelector('.close')
+        let search_text = document.querySelector('.text_appear')
+
+        open.addEventListener('click',function(){
+            search_circle.classList.add('search_click');
+            close_icon.classList.remove('close');
+            search_text.classList.remove('text_appear')
+
+        });
+        close.addEventListener('click',function(){
+            search_circle.classList.toggle('search_click');
+            close_icon.classList.add('close');
+            search_text.classList.add('text_appear')
+        });
+    </script>
+</body>
+</html>

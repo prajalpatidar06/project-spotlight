@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.section{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("image/jay-heike-iutGn5YwQP4-unsplash.jpg");
+    height: 100vh; 
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.flex{
+    display: flex;
+}
+.logo{
+    color: aliceblue;
+    margin-left: 2.3rem;
+    margin-top: 1.5rem; 
+}
+.logo img{  
+    width: 2.8rem;
+}
+.search_circle{
+    border: 1.8px solid whitesmoke;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    background-color: rgba(180, 180, 180, 0.24);
+    padding: 0.3rem;
+    margin-left:87% ;
+    margin-top: 1.5rem;
+}
+.search_click{
+    width: 80%;
+    margin-left: 20%;
+    border-radius: 5rem;
+    margin-right: 10%;
+    display: flex;
+    background-color:transparent;
+    backdrop-filter: blur(1.5rem);
+    padding-left: 2rem;
+}
+.opening ,.closing{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.opening:focus ,.closing:focus{
+    outline: none;
+}
+.search_text{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width:50vw;
+  height:2rem;
+  background-color:transparent;
+  margin-left: 2rem;
+  color: aliceblue;
+}
+.text_appear{
+    display: none;
+}
+.search_text:focus{
+    outline: none;
+}
+.search_circle img{
+    width: 1.4rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.close{
+    display: none;
+}
+.close img{
+    width: 1.8rem;
+}
+#hr{
+    color: aliceblue;
+    background-color: aliceblue;
+    margin-top: 2rem;
+    height: 0.3rem;
+}
+.box{
+   margin: 5rem;
+   margin-left: 25rem;
+   /* background-color: aqua; */
+}
+.polygon{
+    backdrop-filter: blur(15px);
+    height: 12rem;
+    width: 80%;
+    clip-path: polygon(8% 20%,26% 14%,12% -3%, 36% 10%,80% 10%,95% 100%,0 75%);
+    color:red;
+    justify-content: center;
+    align-items: center;
+}
